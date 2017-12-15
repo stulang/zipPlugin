@@ -1,0 +1,19 @@
+{
+  "name": "zipplugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "zipPluing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stulang/zipPlugin.git"
+  },
+  "author": "sunwq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stulang/zipPlugin/issues"
+  },
+  "homepage": "https://github.com/stulang/zipPlugin#readme"
+}
