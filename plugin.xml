@@ -1,16 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="com.inspur.zipPlugin" version="0.0.1。" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>zipPlugin</name>
-    <js-module name="zipPlugin" src="www/zipPlugin.js">
-        <clobbers target="zipPlugin" />
-    </js-module>
+	<name>zipPlugin</name>
+	<js-module name="zipPlugin" src="www/zipPlugin.js">
+		<clobbers target="zipPlugin" />
+	</js-module>
 	<platform name="android">
-    <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="zipPlugin">
-        <param name="android-package" value="com.inspur.plugin.ZipPlugin"/>
-      </feature>
-    </config-file>
-	<source-file src="src/plugin/ZipPlugin.java" target-dir="src/com/inspur/plugin"/>
-	<source-file src="src/utils/ZipFileUtils.java" target-dir="src/com/inspur/utils"/> 
-  </platform>
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="zipPlugin">
+				<param name="android-package" value="com.inspur.plugin.ZipPlugin"/>
+			</feature>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/*">
+		    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		</config-file>
+		<source-file src="src/plugin/ZipPlugin.java" target-dir="src/com/inspur/plugin"/>
+		<source-file src="src/utils/ZipFileUtils.java" target-dir="src/com/inspur/utils"/> 
+  	</platform>
 </plugin>
